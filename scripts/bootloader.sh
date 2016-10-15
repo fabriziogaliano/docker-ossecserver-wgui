@@ -1,5 +1,5 @@
 #!/bin/env bash
-# $Id: bootloader.sh,v 0.1 2016/04/10 $ $Author: Pietro Bonaccorso $
+# $Id: bootloader.sh,v 0.1 2016/04/10 $ $Author: Fabrizio Galiano $
 
 #create group if not exists
 if grep -q $APP_GROUP /etc/group
