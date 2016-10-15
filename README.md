@@ -1,5 +1,5 @@
 ## docker-ossecserver-wgui
-[![](https://images.microbadger.com/badges/image/fabriziogaliano/docker-ossecserver-wgui.svg)](https://microbadger.com/images/fabriziogaliano/docker-ossecserver-wgui "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/fabriziogaliano/docker-ossecserver-wgui.svg)](https://microbadger.com/images/fabriziogaliano/docker-ossecserver-wgui "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/fabriziogaliano/docker-ossecserver-wgui.svg)](https://microbadger.com/images/fabriziogaliano/docker-ossecserver-wgui "Get your own image badge on microbadger.com")
 
 Docker OSSEC Server image with Web Interface
 
