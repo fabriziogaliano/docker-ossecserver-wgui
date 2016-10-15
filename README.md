@@ -1,5 +1,5 @@
-## docker-bind-gui
-[![](https://images.microbadger.com/badges/image/fabriziogaliano/docker-bind-gui.svg)](https://microbadger.com/images/fabriziogaliano/docker-bind-gui "Get your own image badge on microbadger.com")
+## docker-ossecserver-wgui
+[![](https://images.microbadger.com/badges/image/fabriziogaliano/docker-ossecserver-wgui.svg)](https://microbadger.com/images/fabriziogaliano/docker-ossecserver-wgui "Get your own image badge on microbadger.com")
 
 Docker OSSEC Server image with Web Interface
 
