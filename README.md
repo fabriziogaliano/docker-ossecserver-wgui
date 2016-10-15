@@ -21,7 +21,7 @@ Docker OSSEC Server image with Web Interface
 To get an up and running ossec server that supports auto-enrollment and sends HIDS notifications a syslog server, use.
 
 ```
- docker run --name ossec-server -d -p 1514:1514/udp -p 1515:1515\
+ docker run --name ossec-server -d -p 80:80 -p 1514:1514/udp -p 1515:1515\
   -e SYSLOG_FORWADING_ENABLED=true -e SYSLOG_FORWARDING_SERVER_IP=X.X.X.X\
   -v /dirpath/ossec_mnt:/var/ossec/data fabriziogaliano/docker-ossecserver-wgui
 ```
@@ -33,6 +33,8 @@ docker exec -ti ossec-server /var/ossec/bin/list_agents -a
 ```
 
 ## Warnings
+
+#### The WebGui has not authentication, so... carefull!
 
 #### ossec-execd is not enabled
 
