@@ -1,5 +1,5 @@
 FROM xetusoss/ossec-server:2.8.2
-MAINTAINER Fabrizio Galiano <fabrizio.galiano@mosaicoon.com>
+MAINTAINER Fabrizio Galiano <fabrizio.galiano@hotmail.com>
 
 # Ossec Server with WebUi
 
