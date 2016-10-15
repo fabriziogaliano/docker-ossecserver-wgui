@@ -1,9 +1,10 @@
-docker-bind-gui
+# docker-bind-gui
 
 Docker OSSEC Server image with Web Interface
 
-Available Configuration Parameters
+# Available Configuration Parameters
 
+```
 AUTO_ENROLLMENT_ENABLED: Specifies whether or not to enable auto-enrollment via ossec-authd. Defaults to true;
 AUTHD_OPTIONS: Options to passed ossec-authd, other than -p and -g. Defaults to empty;
 SMTP_ENABLED: Whether or not to enable SMTP notifications. Defaults to true if ALERTS_TO_EMAIL is specified, otherwise false
@@ -15,19 +16,22 @@ SYSLOG_FORWARDING_SERVER_IP: The IP for the syslog server to send messagse to, r
 SYSLOG_FORWARDING_SERVER_PORT: The destination port for syslog messages. Default is 514.
 SYSLOG_FORWARDING_FORMAT: The syslog message format to use. Default is default.
 Please note: All the SMTP and SYSLOG configuration variables are only applicable to the first time setup. Once the container's data volume has been initialized, all the configuration options for OSSEC can be changed.
+```
 
-Quick Start
+# Quick Start
 
 To get an up and running ossec server that supports auto-enrollment and sends HIDS notifications a syslog server, use.
 
+```
  docker run --name ossec-server -d -p 1514:1514/udp -p 1515:1515\
   -e SYSLOG_FORWADING_ENABLED=true -e SYSLOG_FORWARDING_SERVER_IP=X.X.X.X\
   -v /dirpath/ossec_mnt:/var/ossec/data fabriziogaliano/docker-ossecserver-wgui
 Once the system starts up, you can execute the standard ossec commands using docker. For example, to list active agents.
+```
 
 docker exec -ti ossec-server /var/ossec/bin/list_agents -a
 
-Warnings
+# Warnings
 
 ossec-execd is not enabled
 
