@@ -3,7 +3,7 @@ services:
   server_wgui:
      build: .
 
-     container_name: ossec_server
+     container_name: ossec_server_gui
 
      network_mode: "bridge"
 
